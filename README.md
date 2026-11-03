@@ -1,6 +1,6 @@
 # report-to-detection
 
-A Claude Code skill that turns a threat intelligence report into reviewable Sigma YAML detection rules, with ATT&CK mapping, test events, false-positive notes and a telemetry-gap list. The skill deploys nothing. Its output is files meant to be reviewed in a pull request as part of a detection-as-code workflow.
+A Claude Code skill that turns a threat intelligence report into reviewable Sigma YAML detection rules, with ATT&CK mapping, test events, false-positive notes and a telemetry-gap list. The skill writes rule files and never commits, pushes or loads them into a SIEM, so nothing it produces takes effect until a reviewer merges it in a pull request, as part of a detection-as-code workflow.
 
 The write-up, with a worked example and the generated rules in full, is at [From Threat Report to Detection Rules: A Claude Code Skill for Sigma YAML](https://www.seattlecodestudio.com/#post/report-to-detection-threat-reports-to-sigma-rules).
 
