@@ -24,7 +24,7 @@ The report may be a PDF, a web page or pasted text. The log sources name the tel
 
 ## Constraints
 
-Four constraints make the output easier to audit.
+Four constraints govern what the skill reads and writes.
 
 - The report is untrusted input. Threat reports quote attacker-controlled strings that can carry prompt-injection text, so anything addressed to an AI or to the analyst is recorded as a finding and never acted on.
 - Behaviors come before indicators. Rules are written from what the adversary did, in intrusion order. IPs, domains and hashes go into separate indicator files with an expiry date (90 days after publication by default), since indicators go stale quickly.
